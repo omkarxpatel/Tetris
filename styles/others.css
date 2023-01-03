@@ -1,0 +1,184 @@
+/***** TITLE *****/
+#game-title {
+  text-align: center;
+  text-decoration: underline;
+}
+
+/***** STATUS *****/
+#game-status {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+/***** TABLE *****/
+#game-table {
+  display: none;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  border: 2px solid white;
+  line-height: 0px;
+}
+
+.game-table-pixel {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  border: 0.005cm solid rgba(255,255,255,0.2);
+  background-color: rgba(0,0,0,0.1);
+  box-sizing: border-box !important;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+}
+
+.game-danger-row-pixel {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+/***** POINTS *****/
+#game-points-pane {
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: calc(100% + 2px);
+  width: 75px;
+  height: 100px;
+  background-color: #00695C;
+  border: 2px solid #009688;
+  color: #B2DFDB;
+  padding: 5px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 14px;
+}
+
+#game-points-sign {
+  display: inline-block;
+  color: #FFC107;
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+#game-lives-icon {
+  color: #F44336;
+  font-size: 16px;
+}
+
+#game-lives-num {}
+
+#game-points-num {
+  display: inline-block;
+  vertical-align: text-bottom;
+  color: white;
+  font-size: 18px;
+}
+
+/***** HOLD PIECE *****/
+#game-hold-piece {
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: calc(100% + 2px);
+  width: 75px;
+  height: 100px;
+  background-color: #3F51B5;
+  border: 2px solid #7986CB;
+  color: #C5CAE9;
+  padding: 5px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 14px;
+}
+
+#game-hold-table {
+  display: block;
+  position: relative;
+  width: 48px;
+  margin: 4px auto 0 auto;
+  padding: 0;
+  line-height: 0px;
+}
+
+.game-hold-table-pixel {
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  border: 0.005cm solid rgba(255,255,255,0.2);
+  background-color: rgba(0,0,0,0.1);
+  box-sizing: border-box !important;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+}
+
+/***** Next *****/
+#game-next {
+  display: block;
+  position: absolute;
+  top: 116px;
+  left: calc(100% + 2px);
+  width: 75px;
+  height: 100px;
+  background-color: #4E342E;
+  border: 2px solid #795548;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 14px;
+}
+
+.game-next-shape {
+  display: block;
+  position: relative;
+  width: 48px;
+  margin: 4px auto 0 auto;
+  padding: 0;
+  line-height: 0px;
+}
+
+.game-next-shape-pixel {
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  border: 0.005cm solid rgba(255,255,255,0.2);
+  background-color: rgba(0,0,0,0.1);
+  box-sizing: border-box !important;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+}
+
+/***** AUTHORS *****/
+#game-authors {
+  display: block;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 50px;
+  margin: 0;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-top: 1px solid white;
+  text-align: center;
+  font-size: 16px;
+}
+
+#game-authors a {
+  color: inherit;
+  text-decoration: none;
+}
+#game-authors a:hover {
+  text-decoration: underline;
+}

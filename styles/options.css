@@ -1,0 +1,26 @@
+#game-option-btn-list {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  color: #303030;
+  background-color: rgba(255,255,255,0.5);
+}
+
+#game-option-btn-list button {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  border: none;
+}
+
+#game-option-btn-list button:hover {
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+}

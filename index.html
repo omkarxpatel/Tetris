@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Tetris Game - by omkarpatel</title>
+
+  <!--My StyleSheets-->
+	<link rel="stylesheet" href="./styles/general.css" type="text/css" />
+	<link rel="stylesheet" href="./styles/loading.css" type="text/css" />
+	<link rel="stylesheet" href="./styles/options.css" type="text/css" />
+	<link rel="stylesheet" href="./styles/others.css" type="text/css" />
+
+  <!--Font Awesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <!--My Scripts-->
+	<script src="./scripts/prototypes.js"></script>
+	<script src="./scripts/helpers.js"></script>
+	<script src="./config.js"></script>
+	<script src="./scripts/globals.js"></script>
+	<script src="./scripts/Loading.js"></script>
+	<script src="./scripts/PromiseQueue.js"></script>
+	<script src="./scripts/SoundFX.js"></script>
+	<script src="./scripts/Pixel.js"></script>
+	<script src="./scripts/Shape.js"></script>
+  <script src="./scripts/Score.js"></script>
+  <script src="./scripts/Life.js"></script>
+  <script src="./scripts/Hold.js"></script>
+  <script src="./scripts/Next.js"></script>
+  <!--and finally-->
+  <script src="./scripts/Game.js"></script>
+</head>
+
+<body>
+  <!--Loading OverLayer-->
+  <div id="game-loading-overlay">
+    <div id="game-loading-box">
+      <span id="game-loading-text">Loading</span>
+      <div id="game-loading-progress">
+        <div></div>
+      </div>
+    </div>
+  </div>
+
+  <!--Game Option Buttons-->
+  <div id="game-option-btn-list">
+    <button id="game-restart-btn" onClick="restartGame.call(this)">
+      <i class="fa fa-undo"></i>
+    </button><!--
+ --><button id="game-toggle-sound-btn" onClick="toggleSoundFX.call(this)">
+      <i class="fa fa-volume-up" ></i>
+    </button><!--
+ --><button id="game-toggle-pause-btn" onClick="togglePause.call(this)">
+      <i class="fa fa-play" ></i>
+    </button>
+  </div>
+
+  <!--Title-->
+	<h1 id="game-title"><span style="color: #FFC107">T</span>etri<span style="color: #CDDC39">S</span></h1>
+
+  <!--General Status-->
+  <p id="game-status" >{ Press Enter to Start }</p>
+
+  <!--Game Table-->
+	<div id="game-table">
+    <!--Points-->
+    <div id="game-points-pane" >
+      <span id="game-points-sign">$</span>
+      <span id="game-points-num" >0</span>
+      <br />
+      <i id="game-lives-icon" class="fa fa-heart"></i>
+      <span id="game-lives-num">0</span>
+    </div>
+    
+    <!--Hold-piece-->
+    <div id="game-hold-piece">
+      <span><i id="game-hold-lock" class="fa fa-lock"></i> Hold</span>
+      <div id="game-hold-table"></div>
+    </div>
+    
+    <!--Next-->
+    <div id="game-next">Next</div>
+  </div>
+
+  <!--Authors-->
+  <div id="game-authors">
+    Made/Written by Omkar -
+    <a href="https://github.com/smrsan76" target="_blank" title="My GitHub Profile">
+      @OmkarPatel
+    </a>
+    <!--
+      <br/>
+      If you developed this game, add your name/profile/link here
+      and explain what you did. ;-)
+    -->
+  </div>
+
+  <!--My Other Scripts-->
+  <script src="./scripts/Table.js"></script>
+  <script src="./scripts/GenStatus.js"></script>
+	<script src="./scripts/index.js"></script>
+</body>
+
+</html>
